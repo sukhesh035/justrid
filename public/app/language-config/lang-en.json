@@ -1,0 +1,114 @@
+[{
+    "heading": "Hello This is home",
+    "common": {
+        "pleaseAdd": "Please Add",
+        "itemGroups": "Item Groups",
+        "existing": "Existing",
+        "location": "Location",
+        "start": "Start",
+        "end": "End",
+        "date": "Date",
+        "time": "Time",
+        "new": "New",
+        "add": "Add",
+        "itemGroup": "Item Groupi",
+        "submit": "Submit",
+        "delete": "Delete",
+        "cancel": "Cancel"
+    },
+    "navAttrs": {
+        "home": "Home",
+        "adCatelog": "Ad Catelog",
+        "adCatelogAttrs": {
+            "adManager": "Ad Manager",
+            "adSchedular": "Ad Scheduler",
+            "adMedia": "Media"
+        }
+    },
+    "adListPage": {
+        "listHead": "List of Ad Drafts",
+        "draftsTab": "Drafts",
+        "createAd": "Create an Ad",
+        "search": "Search",
+        "orgs": "Orgs",
+        "slot": "Slot",
+        "basket": "Basket",
+        "walkUp": "Walk Up",
+        "goodBye": "Good Bye",
+        "noResults": "No Results Found",
+        "name": "Name",
+        "dateModified": "Date Modified",
+        "type": "Type",
+        "sheduled": "Sheduled",
+        "description": "Description",
+        "priceRule": "Price Rule",
+        "sheduledHead": "List of Sheduled Ads",
+        "audience": "Audience",
+        "billingCode": "Billing Code",
+        "trackerCode": "Tracker Code",
+        "promoCode": "Promo Code",
+        "advtCode": "Advertiser Code",
+        "duration": "Duration",
+        "campaignCode": "Campaign Code",
+        "schedulingDetails": "Scheduling Details",
+        "requiredField": "This field is required."
+    },
+    "adCreatePage": {
+        "editAd": "Edit an Ad",
+        "adProp": "Below are the ad propoerties.",
+        "cashier": "Cashier",
+        "askAdAttrs": "Configure code attributes for the ad",
+        "next": "Next",
+        "attachComment": "Ok, attach the ad media in the below box.",
+        "content": "Content",
+        "lookUp": "Look up",
+        "xFor": "XFor",
+        "combo": "Combo",
+        "affinity": "Affinity",
+        "completer": "Completer",
+        "trigger": "Trigger",
+        "noItemGroups": "No Item Groups attached to this Ad",
+        "back": "Back",
+        "scheduleComment": "Please input the schedule details",
+        "adDetails": "Ad Details",
+        "runTheAd": "Run this ad for all 7 days",
+        "confSchedule": "Configure Sheduling values"
+    },
+    "weekDays": {
+        "sunday": {
+            "name": "Sunday",
+            "code": "Sun"
+        },
+        "monday": {
+            "name": "Monday",
+            "code": "Mon"
+        },
+        "tuesday": {
+            "name": "Tuesday",
+            "code": "Tue"
+        },
+        "wednesday": {
+            "name": "Wednesday",
+            "code": "Wed"
+        },
+        "thursday": {
+            "name": "Thursday",
+            "code": "Thu"
+        },
+        "friday": {
+            "name": "Friday",
+            "code": "Fri"
+        },
+        "saturday": {
+            "name": "Saturday",
+            "code": "Sat"
+        }
+    },
+    "messages": {
+        "fileNotSupported": "File not valid, please upload a valid file.",
+        "uploadSucess": "Uploaded Successfully",
+        "areYouSureMedia": "Are you sure you want to remove the media from the ad",
+        "confirmDeleteAd": "Are you sure you want to delete the ad",
+        "deleteCaption": "Once deleted can not be restored"
+    }
+}]

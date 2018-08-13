@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="">
+
+    <style>
+        /* Loading Google fonts, for now included two fonts */
+        @font-face {
+            font-family: 'Dosis';
+            src: url('libs/fonts/Dosis-Regular.ttf') format('truetype');
+        }
+        @font-face {
+            font-family: 'WorkSans';
+            src: url('libs/fonts/WorkSans-Regular.ttf') format('truetype');
+        }
+        
+    </style>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="app/style.css">
+    <title>Lift 2.0</title>
+</head>
+
+<body ng-cloak>
+    <div ng-include="'app/components/header/html/header.html'" ng-if="loggedInStatus"></div>
+    <!-- Main Content Container -->
+    <div>
+        <div id="#main" data-ui-view></div>
+    </div>
+
+
+    <script type="text/javascript" src="require.js" data-main="app/bootstrap.js"></script>
+
+</body>
+
+</html>

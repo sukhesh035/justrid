@@ -1,0 +1,35 @@
+<style>
+        .icon-refresh-animate {
+            animation-name: rotateThis;
+            animation-duration: .5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes rotateThis {
+            from {
+                transform: scale( 1) rotate( 0deg);
+            }
+            to {
+                transform: scale( 1) rotate( 360deg);
+            }
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#update").on("click", function (e) {
+                var $icon = $(this).find(".icon-refresh"),
+                    animateClass = "icon-refresh-animate";
+
+                $icon.addClass(animateClass);
+                // setTimeout is to indicate some async operation
+                window.setTimeout(function () {
+                    $icon.removeClass(animateClass);
+                }, 1000);
+            });
+        });
+    </script>
+    <a id="update" ng-click="clickSpinner()">
+        <!-- <h3 class="icon-refresh">ff</h3> -->
+        <span class="glyphicon glyphicon-refresh icon-refresh pointer"></span>
+    </a>

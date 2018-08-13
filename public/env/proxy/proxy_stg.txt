@@ -1,0 +1,8 @@
+#==============================================================
+# ProxyPass
+#==============================================================
+ProxyPass /api/test http://stage-new.ec2.liftretail.com/ timeout=60000
+ProxyPassReverse /api/test http://stage-new.ec2.liftretail.com/
+
+ProxyPass /api/service http://52.201.244.21:9000 timeout=60000
+ProxyPassReverse /api/service http://52.201.244.21:9000

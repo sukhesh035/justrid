@@ -1,0 +1,109 @@
+<link rel="stylesheet" href="app/components/header/css/header.css">
+
+<script>
+    // $(function () {
+    //     var shrinkHeader = 138;
+    //     $(window).scroll(function () {
+    //         var scroll = getCurrentScroll();
+    //         if (scroll >= shrinkHeader) {
+    //             $('.header').addClass('shrink');
+    //         }
+    //         else {
+    //             $('.header').removeClass('shrink');
+    //         }
+    //     });
+    //     function getCurrentScroll() {
+    //         return window.pageYOffset || document.documentElement.scrollTop;
+    //     }
+    // });
+</script>
+
+<div class="trans header" ng-controller="headerController">
+    <!-- <app-loader loading-bar-on="loadingBarOn" loading-bar-off="loadingBarOff"></app-loader> -->
+    <div class="headerView indigo topLeftBorders">
+        <div class="col-lg-2 logo_container">
+            <img class="logo_image" src="assets/imgs/PRN_StratacacheLogo.png" alt="">
+        </div>
+        <div style="display: inline-block; float: right;margin-top: -20px;">
+
+            <nav class="nav">
+                <ul>
+                    <li>
+                        <a ui-sref="home">{{'navAttrs.home'| translate}}</a>
+                    </li>
+                    <li>
+                        <a >{{'navAttrs.adCatelog' | translate}}</a>
+                        <ul>
+                            <li>
+                                <a ui-sref="adManager.list">{{'navAttrs.adCatelogAttrs.adManager' | translate}}</a>
+                            </li>
+                            <li>
+                                <a >{{'navAttrs.adCatelogAttrs.adSchedular' | translate}}</a>
+                            </li>
+                            <li>
+                                <a ui-sref="mediaCatelog.list">{{'navAttrs.adCatelogAttrs.adMedia' | translate}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a >Price Book</a>
+                        <ul>
+                            <li>
+                                <a ui-sref="itemCatalog">Item Catalog</a>
+                            </li>
+                            <li>
+                                <a >Price Catalog</a>
+                            </li>
+                            <li>
+                                <a ui-sref="uploadPricebook" style="font-size: 18px;">Upload PriceBook</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a >Profile</a>
+                        <ul>
+                            <li>
+                                <a >Subnav Item</a>
+                            </li>
+                            <li>
+                                <a >Subnav Item</a>
+                            </li>
+                            <li>
+                                <a ng-click="logout()">Logout</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a >
+                            <span class="font-white">More<span class="glyphicon glyphicon-option-vertical font-white"></span></span>
+                        </a>
+                        <ul>
+                            <li ng-repeat="lang in languageData">
+                                <a  ng-click="changelanguage(lang.code)">{{lang.name}}</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+    <div>
+        <ol class="breadcrumb">
+
+
+            <li class="breadcrumb-item pointer" ng-repeat="item in breadcrumData">
+                <a ui-sref="{{item.link}}">{{item.label}}</a>
+            </li>
+
+
+            <!-- <li class="breadcrumb-item">
+                <a >Home</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a >Library</a>
+            </li>
+            <li class="breadcrumb-item active">Data</li> -->
+        </ol>
+    </div>
+</div>
