@@ -34,12 +34,12 @@ define(["routes", "uiBootstrap", "angular-ui-router"], function (config) {
 
 	app.run(["$rootScope", "$state", "$transitions", "accountService", function ($rootScope, $state, $transitions, accountService) {
 		$transitions.onStart({}, function (event) {
-			accountService.validateSesstion().then(function (res){
-				if(!res){
-					$rootScope.loggedInStatus = false;
-					$state.go("login");
-				}
-			}); 
+			// accountService.validateSesstion().then(function (res){
+			// 	if(!res){
+			// 		$rootScope.loggedInStatus = false;
+			// 		$state.go("login");
+			// 	}
+			// }); 
 		});
 	}]);
 
@@ -121,14 +121,14 @@ define(["routes", "uiBootstrap", "angular-ui-router"], function (config) {
 			}
 		];
 
-		$scope.logout = function (){
-			//$scope.loadingBarOn();
-			accountService.logout().then(function(response){
-				$rootScope.loggedInStatus = false;
-				//$scope.loadingBarOff();
-				$state.go("login");
-			});
-		};
+		// $scope.logout = function (){
+		// 	//$scope.loadingBarOn();
+		// 	accountService.logout().then(function(response){
+		// 		$rootScope.loggedInStatus = false;
+		// 		//$scope.loadingBarOff();
+		// 		$state.go("login");
+		// 	});
+		// };
 
 	}]);
 
