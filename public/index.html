@@ -9,29 +9,50 @@
 
     <style>
         /* Loading Google fonts, for now included two fonts */
+
         @font-face {
             font-family: 'Dosis';
             src: url('libs/fonts/Dosis-Regular.ttf') format('truetype');
         }
+
         @font-face {
             font-family: 'WorkSans';
             src: url('libs/fonts/WorkSans-Regular.ttf') format('truetype');
         }
-        
     </style>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="libs/angular-material/angular-material.min.css">
+    <link rel="stylesheet" href="libs/normalize.css">
+    <link rel="stylesheet" href="libs/pushy-demo.css">
+    <link rel="stylesheet" href="libs/pushy.css">
     <link rel="stylesheet" href="app/style.css">
-    <title>Lift 2.0</title>
+    <title>Justrid</title>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-1687602643857816",
+            enable_page_level_ads: true
+        });
+    </script>
 </head>
 
 <body ng-cloak>
-    <div ng-include="'app/components/header/html/header.html'" ></div>
+    <div ng-include="'app/components/header/html/header.html'"></div>
     <!-- Main Content Container -->
     <div>
-        <div id="#main" data-ui-view></div>
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </div>
+    <div class="background_div"></div>
+    <div class="background_overlay"></div>
+    <div id="container"  >
+        <button class="menu-btn">&#9776; Menu</button>
+        <button class="menu-btn pull-right">Post Ad</button>
+        <div>
+            <div id="#main" data-ui-view></div>
+        </div>
+    </div>
+
+
 
 
     <script type="text/javascript" src="require.js" data-main="app/bootstrap.js"></script>

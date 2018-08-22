@@ -3,7 +3,37 @@ body *
   /* background: #e4e4e4; */
    color: #545454;
    font-family: WorkSans !important;
+   
+   /* background-repeat: no-repeat; */
 }
+
+.background_div{
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+  opacity: 0.07;
+  transform: scale(1);
+  transform-origin: top left;
+  filter: blur(1px);
+  background: url(../assets/imgs/CLASSIFIED-SAMPLE-2017.jpg);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  -webkit-filter: blur(1px);
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+  position: fixed;
+}
+
+.background_overlay{
+  background: rgba(0, 0, 0, 0.24);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
 .glyphicon{
   font-family: Glyphicons Halflings !important;
 }
