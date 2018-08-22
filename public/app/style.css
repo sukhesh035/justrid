@@ -29,7 +29,7 @@ body *
 
 .background_overlay{
   background: rgba(0, 0, 0, 0.24);
-  position: absolute;
+  position: fixed;
   height: 100%;
   width: 100%;
 }
